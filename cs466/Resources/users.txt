@@ -1,0 +1,37 @@
+{
+  "test": {
+    "password": "butts",
+    "progress": {
+      "3": 6,
+      "7": 0
+    }
+  },
+  "things": {
+    "password": "butts",
+    "progress": {
+      "3": 0,
+      "7": 0
+    }
+  },
+  "stuff": {
+    "password": "things",
+    "progress": {
+      "3": 0,
+      "7": 0
+    }
+  },
+  "rngesus": {
+    "password": "password",
+    "progress": {
+      "3": 0,
+      "7": 0
+    }
+  },
+  "randomisrandom": {
+    "password": "blizzard",
+    "progress": {
+      "3": 0,
+      "7": 0
+    }
+  }
+}

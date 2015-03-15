@@ -1,0 +1,16 @@
+TF|Agile is newer than iterative|True|False
+TF|The manager does not create a work breakdown structure,schedule or estimates; this is done as a team|True|False
+TF|The manager (usually) tells people what to do|False|True
+TF|The first value in the agile manifesto is Processes and tools over individuals and interactions|False|True,False
+MC|Which one of the following best describes the agile prime directive?|Embrace change|Sequential development,The customer is always right,Plan ahead
+MC|Which one does Agile development methods NOT apply|Team managed by a team leader|Time-boxed iterative,Evolutionary development,adaptive planning
+MC|Which is not a practice or principle that reflects agile development?|Documenting over programming|Simplicity and lightness,Communication,Self-directed teams
+MC|What is the purpose of a Scrum daily stand-up meeting?|To ask special questions that each member answers|For team members to stretch their legs from sitting down all day,To talk to the customer about requirements,For team members to start their day with a well balanced breakfast
+MC|Which of the following is not an example practice from XP?|Verbal explanations can be replaced with detailed written requirements|Use of story cards,Programming in pairs,Working in a common project room
+MC|Which of the following terms is best described by the amount of method weight in terms of documentation,formal steps,review and so forth?|Ceremony|XP,Cycles,Scrum
+MC|Which of the following terms is best described by the number and length of iterations?|Cycles|Ceremony,XP,Scrum
+MC|Which is the highest priority of agile principles?|Satisfy the customer through early and continuous delivery of valuable software|Working software is the primary measure of progress,Build projects around motivated individuals,The most efficient and effective method of conveying  information to and within a development team is face-to-face conversation
+MC|What is the project manager’s role?|Removing impediments| Telling people what to do,Creating a work breakdown structure,Schedule or estimates
+MC|Which of the following is not how agile methods receive feedback?|Surveys|Conversation,Testing,Demos
+MC|Which is not one of Scrum’s distinctive emphases?|Following predefined steps|Self-organizing teams,Daily team measurement,30-calendar day iterations
+MC|Which is not one of XP’s distinctive emphases?|Programming without documentation|Collaboration,Quick and early software creation,Skillful development practices
