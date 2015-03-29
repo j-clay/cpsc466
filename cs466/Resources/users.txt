@@ -1,13 +1,13 @@
 {
   "test": {
-    "password": "butts",
+    "password": "password",
     "progress": {
       "3": 6,
       "7": 0
     }
   },
   "things": {
-    "password": "butts",
+    "password": "password",
     "progress": {
       "3": 0,
       "7": 0
