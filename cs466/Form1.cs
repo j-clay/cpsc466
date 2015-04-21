@@ -120,7 +120,7 @@ namespace cs466
 			System.IO.StreamReader reader = System.IO.File.OpenText(@"Resources/users.txt");
             JObject users = (JObject)JToken.ReadFrom(new JsonTextReader(reader));
             reader.Close();
-<<<<<<< HEAD
+//<<<<<<< HEAD
             if (val == "existing") // if user clicked the Login button
             {
                 try
@@ -144,7 +144,7 @@ namespace cs466
                         //passwordTextBox.Focus();
                         return;
                     }*/
-=======
+//=======
             if (val == "existing")
             {
                 try
@@ -163,12 +163,12 @@ namespace cs466
                         passwordTextBox.Focus();
                         return;
                     }
->>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
+//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
                 }
                 catch
                 {
                     MessageBox.Show("Account does not exist.");
-<<<<<<< HEAD
+//<<<<<<< HEAD
                     //MessageBox.Show("Invalid username/password"); // more secure
                     //passwordTextBox.Text = "";
                     //passwordTextBox.Focus();
@@ -211,7 +211,7 @@ namespace cs466
                     //MessageBox.Show("Username already exists");
                     MessageBox.Show("Invalid username/password"); // more secure
                     userNameTextBox.Text = "";
-=======
+//=======
                 }
             }
             else
@@ -235,15 +235,15 @@ namespace cs466
                 catch
                 {
                     MessageBox.Show("username already exists");
->>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
+//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
                     userNameTextBox.Focus();
                     return;
                 }
             }
-<<<<<<< HEAD
+//<<<<<<< HEAD
             //FIX
-=======
->>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
+//=======
+//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
             registerLabel.Visible = false;
             passwordTextBox.Visible = false;
             userNameTextBox.Enabled = false;
@@ -255,10 +255,10 @@ namespace cs466
 
         private void logout()
         {
-<<<<<<< HEAD
+//<<<<<<< HEAD
             //FIX
-=======
->>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
+//=======
+//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
 			System.IO.StreamReader reader = System.IO.File.OpenText(@"Resources/users.txt");
             JObject users = (JObject)JToken.ReadFrom(new JsonTextReader(reader));
             reader.Close();
@@ -405,10 +405,10 @@ namespace cs466
             }
         }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         //FIX
-=======
->>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
+//=======
+//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
         private void loginButton_Click(object sender, EventArgs e)
         {
             if (userNameTextBox.Text == "" || passwordTextBox.Text == "")
