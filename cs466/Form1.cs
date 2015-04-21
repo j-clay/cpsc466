@@ -120,7 +120,6 @@ namespace cs466
 			System.IO.StreamReader reader = System.IO.File.OpenText(@"Resources/users.txt");
             JObject users = (JObject)JToken.ReadFrom(new JsonTextReader(reader));
             reader.Close();
-//<<<<<<< HEAD
             if (val == "existing") // if user clicked the Login button
             {
                 try
@@ -148,7 +147,6 @@ namespace cs466
                 catch
                 {
                     MessageBox.Show("Account does not exist.");
-//<<<<<<< HEAD
                     //MessageBox.Show("Invalid username/password"); // more secure
                     //passwordTextBox.Text = "";
                     //passwordTextBox.Focus();
@@ -207,10 +205,11 @@ namespace cs466
 
         private void logout()
         {
+            //FIX
 			System.IO.StreamReader reader = System.IO.File.OpenText(@"Resources/users.txt");
             JObject users = (JObject)JToken.ReadFrom(new JsonTextReader(reader));
             reader.Close();
-            users[userNameTextBox.Text]["progress"]["3"] = currentUser.progress;
+            users[userNameTextBox.Text]["progress"]["3"] = currentUser.progress; // exception here after logging out
 			System.IO.File.WriteAllText(@"Resources/users.txt", users.ToString());
             groupBox1.Visible = false;
             loginButton.Text = "&Login";
