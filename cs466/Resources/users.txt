@@ -1,0 +1,20 @@
+{
+  "users": [
+	{
+		"username": "Lemon",
+		"password": "123",
+		"progress": {
+			"ch3": 0,
+			"ch7": 0
+		}
+	},
+	{
+		"username": "Cake",
+		"password": "123",
+		"progress": {
+			"ch3": 0,
+			"ch7": 0
+		}
+	}
+  ]
+}
