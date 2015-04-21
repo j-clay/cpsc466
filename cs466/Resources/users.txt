@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "users": [
 	{
@@ -18,3 +19,42 @@
 	}
   ]
 }
+=======
+{
+  "test": {
+    "password": "password",
+    "progress": {
+      "3": 6,
+      "7": 0
+    }
+  },
+  "things": {
+    "password": "password",
+    "progress": {
+      "3": 0,
+      "7": 0
+    }
+  },
+  "stuff": {
+    "password": "things",
+    "progress": {
+      "3": 0,
+      "7": 0
+    }
+  },
+  "rngesus": {
+    "password": "password",
+    "progress": {
+      "3": 0,
+      "7": 0
+    }
+  },
+  "randomisrandom": {
+    "password": "blizzard",
+    "progress": {
+      "3": 0,
+      "7": 0
+    }
+  }
+}
+>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
