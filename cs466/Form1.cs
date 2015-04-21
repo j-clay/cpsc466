@@ -144,26 +144,6 @@ namespace cs466
                         //passwordTextBox.Focus();
                         return;
                     }*/
-//=======
-            if (val == "existing")
-            {
-                try
-                {
-                    if (passwordTextBox.Text == users[userNameTextBox.Text]["password"].ToString())
-                    {
-                        currentUser.user = userNameTextBox.Text;
-                        currentUser.progress = (int)users[userNameTextBox.Text]["progress"]["3"];
-                        loadStuff(chapterComboBox.Text);
-                        loadProgress();
-                    }
-                    else
-                    {
-                        MessageBox.Show("wrong password");
-                        passwordTextBox.Text = "";
-                        passwordTextBox.Focus();
-                        return;
-                    }
-//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
                 }
                 catch
                 {
@@ -211,39 +191,11 @@ namespace cs466
                     //MessageBox.Show("Username already exists");
                     MessageBox.Show("Invalid username/password"); // more secure
                     userNameTextBox.Text = "";
-//=======
-                }
-            }
-            else
-            {
-                JObject user = new JObject(
-                                            new JProperty(userNameTextBox.Text,
-                                                new JObject(
-                                                    new JProperty("password", passwordTextBox.Text),
-                                                    new JProperty("progress",
-                                                    new JObject(
-                                                        new JProperty("3", 0),
-                                                        new JProperty("7", 0)
-                                                    )))));
-                try
-                {
-                    users.Add(userNameTextBox.Text, user[userNameTextBox.Text]);
-                    System.IO.File.WriteAllText(@"Resources/users.txt", users.ToString());
-                    currentUser.user = userNameTextBox.Text;
-                    currentUser.progress = (int)users[userNameTextBox.Text]["progress"]["3"];
-                }
-                catch
-                {
-                    MessageBox.Show("username already exists");
-//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
                     userNameTextBox.Focus();
                     return;
                 }
             }
-//<<<<<<< HEAD
             //FIX
-//=======
-//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
             registerLabel.Visible = false;
             passwordTextBox.Visible = false;
             userNameTextBox.Enabled = false;
@@ -255,10 +207,6 @@ namespace cs466
 
         private void logout()
         {
-//<<<<<<< HEAD
-            //FIX
-//=======
-//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
 			System.IO.StreamReader reader = System.IO.File.OpenText(@"Resources/users.txt");
             JObject users = (JObject)JToken.ReadFrom(new JsonTextReader(reader));
             reader.Close();
@@ -405,10 +353,7 @@ namespace cs466
             }
         }
 
-//<<<<<<< HEAD
         //FIX
-//=======
-//>>>>>>> 928be964bce14c43bfd2982ac5d4d7661de63809
         private void loginButton_Click(object sender, EventArgs e)
         {
             if (userNameTextBox.Text == "" || passwordTextBox.Text == "")
